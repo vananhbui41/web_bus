@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Sign in</title>
+  <title>Log in</title>
   <link rel="stylesheet" type="text/css" href="public/assets/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="public/assets/css/bootstrap-theme.css">
   <link rel="stylesheet" type="text/css" href="public/assets/css/myCss.css">
