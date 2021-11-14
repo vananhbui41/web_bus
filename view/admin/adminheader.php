@@ -40,7 +40,7 @@
             <li>
               <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-user"></i>Admin Account</a></li>
             <li>
-              <a href="login.php" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i>Đăng xuất</a>
+              <a href="http://localhost/web_bus/view/home/homepage.php" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i>Đăng xuất</a>
             </li>
             </ul>
           </div>
