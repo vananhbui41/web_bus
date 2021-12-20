@@ -69,73 +69,11 @@
         
         <!-- Tin buýt -->
         <div class="col-sm-9">
-            <h3>Các chuyến tiếp theo <br></h3>
+            <h3>Danh sách tuyến xe <br></br></h3>
               <div class="row">
-              <div class="col-md-4">
-              <div class="thumbnail">
-               <a href="../images/xebuyt1.jpg" target="_blank">
-                <img src="../images/xebuyt1.jpg" alt="Lights" style="width:100%">
-                <div class="caption">
-                  <p>Chuyến số 15<br>Thời gian:7h10</p>
-                </div>
-               </a>
-              </div>
-              </div>
-              <div class="col-md-4">
-              <div class="thumbnail">
-              <a href="../images/xebuyt1.jpg" target="_blank">
-                <img src="../images/xebuyt1.jpg" alt="Nature" style="width:100%">
-                <div class="caption">
-                  <p>Chuyến số 16<br>Thời gian:7h10</p>
-                </div>
-              </a>
-              </div>
-              </div>
-              <div class="col-md-4">
-              <div class="thumbnail">
-              <a href="../images/xebuyt3.jpg" target="_blank">
-                <img src="../images/xebuyt3.jpg" alt="Fjords" style="width:100%">
-                <div class="caption">
-                  <p>Chuyến số 17<br>Thời gian:7h10</p>
-                </div>
-              </a>
-              </div>
-              </div>
-              </div>
-              <br>
-              <h3>Các chuyến đã đi</h3>
-              <div class="row">
-              <div class="col-md-4">
-              <div class="thumbnail">
-              <a href="../images/xebuyt1.jpg" target="_blank">
-                <img src="../images/xebuyt1.jpg" alt="Lights" style="width:100%">
-                <div class="caption">
-                  <p>Chuyến số 15<br>Thời gian:7h10</p>
-                </div>
-              </a>
-              </div>
-              </div>
-              <div class="col-md-4">
-              <div class="thumbnail">
-              <a href="../images/xebuyt1.jpg" target="_blank">
-                <img src="../images/xebuyt1.jpg" alt="Nature" style="width:100%">
-                <div class="caption">
-                  <p>Chuyến số 16<br>Thời gian:7h10</p>
-                </div>
-              </a>
-              </div>
-              </div>
-              <div class="col-md-4">
-              <div class="thumbnail">
-              <a href="../images/xebuyt3.jpg" target="_blank">
-                <img src="../images/xebuyt3.jpg" alt="Fjords" style="width:100%">
-                <div class="caption">
-                  <p>Chuyến số 17<br>Thời gian:7h10</p>
-                </div>
-              </a>
-              </div>
-              </div>
-              </div>
+              <?php
+              require('../../controller/ListBus.php');
+              ?>
           </div>
         </div>
     </div>

@@ -38,11 +38,10 @@
             </a>
     
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/Project%20LTW/web_bus/view/home/homepage.php" class="nav-link px-2 text-white">Trang chủ</a></li>
+                <li><a href="../index.php" class="nav-link px-2 text-white">Trang chủ</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Góp ý</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">About</a></li>
             </ul>
-    
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
               <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
             </form>
