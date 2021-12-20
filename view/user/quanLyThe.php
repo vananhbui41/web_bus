@@ -16,6 +16,7 @@
     <div class="container">
         <div class="row gutters">
         <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+<<<<<<< HEAD
         <div class="card h-100">
             <div class="card-body">
                 <div class="account-settings">
@@ -29,6 +30,9 @@
                 </div>
             </div>
         </div>
+=======
+        <?php include'userinfo.php'; ?>
+>>>>>>> b786dd550edf380ccd474c5507b37d9d370e5f80
         </div>
         <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
         <div class="card h-100">
@@ -58,58 +62,12 @@
             <div class="row gutters">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="text-right">
-                        <button type="button" id="submit" name="submit" class="btn btn-secondary">Thoát</button>
+                        <button type="button" id="submit" name="submit" class="btn btn-secondary"><a href="home.php" class="link-light">Thoát</a></button>
                         <button type="button" id="submit" name="submit" class="btn btn-primary"><a href="napTien.php" class="link-light">Nạp tiền</a></button>
                     </div>
                 </div>
             </div>
 
-                <!-- <div class="row gutters">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <h6 class="mb-2 text-primary">Thông tin</h6>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <div class="form-group">
-                            <label for="fullName">Họ và tên</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <div class="form-group">
-                            <label for="eMail">Email</label>
-                            <input type="email" class="form-control" id="eMail" placeholder="Enter email ID">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <div class="form-group">
-                            <label for="phone">Số điện thoại</label>
-                            <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <div class="form-group">
-                            <label for="birth">Ngày sinh</label>
-                            <input type="url" class="form-control" id="birth" placeholder="dd/mm/yyyy">
-                        </div>
-                    </div>
-                </div>
-                <div class="row gutters">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <div class="form-group">
-                            <label for="addr">Địa chỉ</label>
-                            <input type="name" class="form-control" id="addr" placeholder="Enter Address">
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row gutters">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="text-right">
-                            <button type="button" class="btn btn-secondary">Cancel</button>
-                            <button type="button" class="btn btn-primary">Update</button>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         </div>
