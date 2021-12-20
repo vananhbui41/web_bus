@@ -10,15 +10,20 @@ DiaChi varchar(30),
 NgaySinh date,
 MaThe varchar(10)
 );
-
+INSERT INTO KhachHang (SĐT, MatKhau, HoTen, GioiTinh, DiaChi, NgaySinh) VALUES ('0985020034','123', 'Chu Hien', '1', 'Nghệ An', '2000-02-04');
 create table TuyenXe (
 MaTuyen varchar(5) NOT NULL primary key,
 SoXe int(3) NOT NULL,
-TGDen time,
-TGXuat time,
-TGGianCach int(4),
+TGChay time,
+TGDung time,
+TGGianCach int(2),
 GiaVe float NOT NULL
 );
+insert into TuyenXe (MaTuyen, SoXe, TGChay, TGDung, TGGianCach, GiaVe) values
+('TX01', '01','05:00:00', '21:00:00', '30', '7000'),
+('TX02', '02','05:00:00', '21:00:00', '30', '7000'),
+('TX03', '03','05:00:00', '21:00:00', '30', '7000'),
+('TX04', '04','05:00:00', '21:00:00', '30', '7000');
 create table VeThuong (
 MaVe int(5) auto_increment not null primary key,
 MaTuyen varchar(5) NOT NULL,
