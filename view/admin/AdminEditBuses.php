@@ -186,7 +186,7 @@
                 <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
                 <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
             </ul>
-            <button class="w- btn btn-lg btn-primary" type="button" onclick= "changeBus()">Thêm tuyến</button>
+            <button class="w- btn btn-lg btn-primary" type="button" onclick= "changeBus1()">Thêm tuyến</button>
             <button class="w- btn btn-lg btn-primary" type="button">Xóa</button>
 </div>
 
@@ -194,30 +194,39 @@
 <div id="ThemBus" style="display: none;">
 <form method="post">
   <div class="form-group">
-      <label for="MaTuyen">Mã Tuyến</label>
+      <label>Mã Tuyến</label>
       <input type="text" class="form-control" id="fullName" name="MaTuyen" placeholder="Enter MaTuyen">
   </div>
   <br>
   <div class="form-group">
-      <label for="SoXe">Số xe</label>
+      <label>Số xe</label>
       <input type="number" class="form-control" name="SoXe" placeholder="Enter SoXe">
   </div>
   <br>
   <div class="form-group">
-      <label for="TGXuat">Thời Gian Đến</label>
+      <label>Thời Gian Đến</label>
       <input type="number" class="form-control" name="TGDen" placeholder="Tgian">
   </div>
   <br>
   <div class="form-group">
-      <label for="TGDen">Thời Gian Xuất</label>
+      <label>Thời Gian Xuất</label>
       <input type="number" class="form-control"name="TGXuat" placeholder="Tgian">
   </div>
   <br>
   <div class="form-group">
-      <label for="TGDen">Giá Vé</label>
+      <label>Thời Gian Giãn Cách</label>
+      <input type="number" class="form-control"name="TGGianCach" placeholder="Tgian">
+  </div>
+  <br>
+  <div class="form-group">
+      <label>Giá Vé</label>
       <input type="number" class="form-control"name="GiaVe" placeholder="Tgian">
   </div>
   <br>
-  <button class="w- btn btn-lg btn-primary" name="CreateBus" type="button">Thêm tuyến</button>           
+  <button class="w- btn btn-lg btn-primary" onclick= "changeBus2()" type="submit">Hủy</button> 
+  <button class="w- btn btn-lg btn-primary" name="CreateBus" type="submit">Thêm tuyến</button>           
 </form>
+<?php
+require('../../controller/Bus.php');
+?>
 </div>

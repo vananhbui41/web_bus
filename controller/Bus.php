@@ -1,24 +1,34 @@
 <?php
 //Khai báo sử dụng session
-        require("../model/database.php");
-        if (!isset($_POST['LogIn'])){
-          die('');
-        }
-          $SĐT = $_POST['SĐT'];
-          $MatKhau = $_POST['MatKhau'];
-          $sql = "SELECT * FROM KhachHang WHERE SĐT = '{$SĐT}' AND MatKhau = '{$MatKhau}'";
-          $result = $conn->query($sql);
-          if ($result->num_rows > 0) {
-          echo "Thành công";
-          //Lưu tên đăng nhập
-          $row = $result->fetch_assoc();
-          echo $row['HoTen'];
-          $_SESSION['userInf']=$row;
-          echo $_SESSION['userInf']['HoTen'];
-          // output data of each row
-          header('Location: user/home.php');
+        // require("../model/database.php");
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "bus";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+        if (isset($_POST['CreateBus'])){
+          $MaTuyen = $_POST['MaTuyen'];
+          $SoXe = $_POST['SoXe'];
+          $TGDen = $_POST['TGDen'];
+          $TGXuat = $_POST['TGXuat'];
+          $TGGianCach = $_POST['TGGianCach'];
+          $GiaVe = $_POST['GiaVe'];
+          if (!$MaTuyen|| !$SoXe || !$TGDen || !$TGGianCach || !$TGXuat || !$GiaVe){
+            echo "Nhập thông tin đầy đủ";
           } else {
-            echo "Tên tài khoản hoặc mật khẩu không chính xác!!!";
+          $sql = "INSERT INTO TuyenXe (MaTuyen, SoXe, TGDen, TGXuat, TGGianCach, GiaVe) VALUES ( '{$MaTuyen}', '{$SoXe}', '{$TGDen}', '{$TGXuat}', '{$TGGianCach}', '{$GiaVe}')";
+          if (mysqli_query($conn, $sql)) {
+            echo "Tạo tuyến xe thành công";
+          } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+          }
           }
           $conn->close();
+         }
 ?>

@@ -11,8 +11,8 @@
         if (!$HoTen|| !$GioiTinh || !$DiaChi || !$NgaySinh){
         echo "Vui lòng nhập đầy đủ thông tin";
         } else {
-        $MaKH = $_SESSION['UserInf'][MaKH];
-        $sql = "UPDATE KhachHang SET HoTen='{$HoTen}', GioiTinh={'$GioiTinh}, DiaChi='{$DiaChi}', NgaySinh='{$NgaySinh}' WHERE MaKH=$MaKH";
+        $MaKH = $_SESSION['userInf']['MaKH'];
+        $sql = "UPDATE KhachHang SET HoTen='{$HoTen}', GioiTinh='{$GioiTinh}', DiaChi='{$DiaChi}', NgaySinh='{$NgaySinh}' WHERE MaKH=$MaKH";
         if (mysqli_query($conn, $sql)) {
             echo "Update thành công";
         } else {

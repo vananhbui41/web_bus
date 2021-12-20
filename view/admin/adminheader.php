@@ -18,9 +18,13 @@
     
   </style>
   <script>
-      function changeBus() {
+      function changeBus1() {
       document.getElementById('ViewBus').style.display='none';
       document.getElementById('ThemBus').style.display='block';
+      }
+      function changeBus2() {
+      document.getElementById('ViewBus').style.display='block';
+      document.getElementById('ThemBus').style.display='none';
       }
   </script>
 </head>
@@ -29,7 +33,7 @@
     <header class="p-3 bg1 text-white">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/Project%20LTW/web_bus/view/home/homepage.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <a href="../index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                 <abbr title="Trang chủ" style="border: none; cursor: pointer;"><img src="images/logo.png" alt="logo" width="100" height="50" /></abbr>
             </a>
     

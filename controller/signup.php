@@ -1,9 +1,8 @@
 <?php
 //Khai báo sử dụng session
         require("../model/database.php");
-        if (!isset($_POST['SignUp'])){
-          die('');
-        }
+///
+        if (isset($_POST['SignUp'])){
           $SĐT = $_POST['SĐT'];
           $HoTen = $_POST['HoTen'];
           $MatKhau1 = $_POST['MatKhau1'];
@@ -26,4 +25,5 @@
           }
         }
         $conn->close();
+      }
 ?>

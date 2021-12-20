@@ -55,7 +55,7 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
                             <label for="birth">Ngày sinh</label>
-                            <input type="url" class="form-control" id="birth" name="NgaySinh" placeholder="yyyy/mm/dd">
+                            <input type="date" class="form-control" id="birth" name="NgaySinh" placeholder="yyyy/mm/dd">
                         </div>
                     </div>
                 </div>
@@ -65,11 +65,14 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="text-right">
                             <button type="button" class="btn btn-secondary">Cancel</button>
-                            <button type="button" name="Update" class="btn btn-primary">Update</button>
+                            <button type="submit" name="Update" class="btn btn-primary">Update</button>
                         </div>
                     </div>
                 </div>
             </form>
+            <?php
+            require('../../controller/updateProfile.php');
+            ?>
             </div>
         </div>
         </div>

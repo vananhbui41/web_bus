@@ -1,3 +1,4 @@
+
 <?php 
 require "adminheader.php";
 ?>
@@ -13,10 +14,12 @@ require "adminheader.php";
         <div class="tab-content" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <?php require "AdminEditBuses.php"; ?>
+            
           </div>
           
           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
             <?php require "AdminEditUser.php";?>
+
           </div>
 
           <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
