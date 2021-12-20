@@ -17,6 +17,12 @@
     }
     
   </style>
+  <script>
+      function changeBus() {
+      document.getElementById('ViewBus').style.display='none';
+      document.getElementById('ThemBus').style.display='block';
+      }
+  </script>
 </head>
 <body>
     <!-- Header -->
