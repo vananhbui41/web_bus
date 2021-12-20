@@ -1,4 +1,5 @@
 <?php
+//Khai báo sử dụng session
         require("../model/database.php");
         if (!isset($_POST['LogIn'])){
           die('');
@@ -10,7 +11,10 @@
           if ($result->num_rows > 0) {
           echo "Thành công";
           //Lưu tên đăng nhập
-          $_SESSION['SĐT'] = $SĐT;
+          $row = $result->fetch_assoc();
+          echo $row['HoTen'];
+          $_SESSION['userInf']=$row;
+          echo $_SESSION['userInf']['HoTen'];
           // output data of each row
           header('Location: user/home.php');
           } else {

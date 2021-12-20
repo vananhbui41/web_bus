@@ -33,27 +33,34 @@
 <body class="text-center">
 
     <main class="form-signup">
-        <form>
-        <img class="mb-5" src="images/logo.png" alt="" width="150" height="70">
+        <form method="post">
+        <a href="index.php"><abbr title="Trang chu" style="border: none; cursor: pointer;"><img class="mb-5" src="images/logo.png" alt="" width="150" height="70"></abbr></a>
         <h1 class="h3 mb-4 fw-normal">Enter your Phone and Password</h1>
     
         <div class="form-floating">
-            <input type="phoneNumber" class="form-control" id="floatingInput" placeholder="0xxxxxxxxx">
+            <input type="text" class="form-control" id="floatingInput" name ="HoTen" placeholder="Ho Ten">
+            <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating">
+            <input type="phoneNumber" class="form-control" id="floatingInput" name ="SĐT" placeholder="0xxxxxx">
             <label for="floatingInput">Phone Number</label>
         </div>
         <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" name ="MatKhau1" placeholder="Password">
             <label for="floatingPassword">Password</label>
         </div>
         <div class="form-floating">
-            <input type="cfPassword" class="form-control" id="cfPassword" placeholder="Confirm Password">
+            <input type="cfPassword" class="form-control" id="cfPassword" name ="MatKhau2" placeholder="Confirm Password">
             <label for="cfPassword">Confirm Password</label>
         </div>
         
     
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Create an accout</button>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" name="SignUp">Create an accout</button>
         <p class="mt-5 mb-4 text-muted">© 2017–2021</p>
         </form>
+        <?php
+        require("../controller/signup.php");
+        ?>
     </main>
      
     <div class="selection_bubble_root" style="display: none;"></div>

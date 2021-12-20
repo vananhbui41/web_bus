@@ -1,4 +1,5 @@
 <!-- Header -->
+<?php session_start(); ?>
  <header class="p-3 bg-dark text-white" style = "background-image: url('images/bg1.jpg');" >
      <div class="container">
        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -20,9 +21,9 @@
          </form>
          
          <ul class="nav col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-             <li><a href="profile.php" class="nav-link px-2 text-white">Account</a></li>
+             <li><a href="profile.php" class="nav-link px-2 text-white"><?php echo $_SESSION['userInf']['HoTen'];?></a></li>
              <li><a href="quanLyThe.php" class="nav-link px-2 text-white">Quản lý thẻ</a></li>
-             <li><a href="../index.php" class="nav-link px-2 text-white">Đăng xuất</a></li>              
+             <li><a href="../index.php" class="nav-link px-2 text-white">Đăng xuất  </a></li>              
          </ul>
        </div>
      </div>
