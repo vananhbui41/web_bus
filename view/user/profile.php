@@ -18,7 +18,9 @@
     <div class="container">
         <div class="row gutters">
         <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+
             <?php include 'userinfo.php'; ?>
+
         </div>
         <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
         <div class="card h-100">
