@@ -12,7 +12,56 @@
 </head>
 <body>
     <?php include("header.php"); ?>
-    <h1>Trang đăng kí thẻ</h1>
+    <!-- main dang ki the -->
+    <div class="container">
+        <div class="row gutters">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <?php include 'userinfo.php'; ?>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+        <div class="card h-100">
+            <div class="card-body">
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h6 class="mb-2 text-primary">Đăng ký thẻ xe buýt</h6>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label for="bankcardNum">Số thẻ ngân hàng</label>
+                            <input type="text" class="form-control" id="bankcardNum" placeholder="Enter bank card number">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label for="bank">Ngân hàng</label>
+                            <input type="text" class="form-control" id="bank" placeholder="Enter bank's name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutters">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="true" id="theVatLy">
+                            <label class="form-check-label" for="theVatLy">
+                                Nhận thẻ vật lý
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="text-right">
+                            <button type="button" class="btn btn-secondary"><a href="home.php" class="link-light">Thoát</a></button>
+                            <button type="button" class="btn btn-primary"><a href="quanLyThe.php" class="link-light">Đăng ký</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
     
     <?php include("../footer.php"); ?>
 </body>
