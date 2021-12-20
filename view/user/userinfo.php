@@ -6,7 +6,7 @@
                     <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
                 </div>
                 <center><h5 class="user-name"><?php echo $_SESSION['userInf']['HoTen']; ?></h5></center>
-                <!-- <h6 class="user-email">vananhbui41@gmail.com</h6> -->
+                <center><h6 class="user-sđt"><?php echo $_SESSION['userInf']['SĐT']; ?></h6></center>
             </div>
         </div>
     </div>

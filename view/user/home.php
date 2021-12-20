@@ -139,6 +139,7 @@
           </div>
         </div>
     </div>
+    <hr>
   <?php include("../footer.php"); ?>
 </body>
 </html>

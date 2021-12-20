@@ -23,6 +23,7 @@
         <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
         <div class="card h-100">
             <div class="card-body">
+                <form method = "post">
                 <div class="row gutters">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <h6 class="mb-2 text-primary">Thông tin</h6>
@@ -30,45 +31,43 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
                             <label for="fullName">Họ và tên</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+                            <input type="text" class="form-control" id="fullName" name="HoTen" placeholder="Enter full name">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
-                            <label for="eMail">Email</label>
-                            <input type="email" class="form-control" id="eMail" placeholder="Enter email ID">
+                            <label for="Giới Tính">Giới tính</label>
+                            <br>
+                            <select name="GioiTinh" id="GioiTinh">
+                                <option value="0" selected="selected">Nam</option>
+                                <option value="1">Nữ </option>
+                            </select>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
-                            <label for="phone">Số điện thoại</label>
-                            <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                            <label for="adddr">Địa chỉ</label>
+                            <input type="name" class="form-control" id="addr" name="DiaChi" placeholder="Enter Address">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
                             <label for="birth">Ngày sinh</label>
-                            <input type="url" class="form-control" id="birth" placeholder="dd/mm/yyyy">
+                            <input type="url" class="form-control" id="birth" name="NgaySinh" placeholder="yyyy/mm/dd">
                         </div>
                     </div>
                 </div>
-                <div class="row gutters">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <div class="form-group">
-                            <label for="addr">Địa chỉ</label>
-                            <input type="name" class="form-control" id="addr" placeholder="Enter Address">
-                        </div>
-                    </div>
-                </div>
+                
                 <br>
                 <div class="row gutters">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="text-right">
                             <button type="button" class="btn btn-secondary">Cancel</button>
-                            <button type="button" class="btn btn-primary">Update</button>
+                            <button type="button" name="Update" class="btn btn-primary">Update</button>
                         </div>
                     </div>
                 </div>
+            </form>
             </div>
         </div>
         </div>

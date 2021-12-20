@@ -3,7 +3,7 @@
  <header class="p-3 bg-dark text-white" style = "background-image: url('images/bg1.jpg');" >
      <div class="container">
        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-         <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+         <a href="home.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
              <abbr title="Trang chu" style="border: none; cursor: pointer;"><img src="../images/logo.png" alt="logo" width="70" heigh="33" /></abbr>
          </a>
  
