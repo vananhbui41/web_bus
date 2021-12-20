@@ -18,9 +18,13 @@
     <div class="container">
         <div class="row gutters">
         <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+<<<<<<< HEAD
 
             <?php include 'userinfo.php'; ?>
 
+=======
+            <?php include 'userinfo.php'; ?>
+>>>>>>> 422dfdd315bd95afdfb07b3747a4a3ceb4975e50
         </div>
         <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
         <div class="card h-100">
