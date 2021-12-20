@@ -15,14 +15,14 @@ if ($conn->connect_error) {
         if (isset($_POST['CreateBus'])){
           $MaTuyen = $_POST['MaTuyen'];
           $SoXe = $_POST['SoXe'];
-          $TGDen = $_POST['TGDen'];
-          $TGXuat = $_POST['TGXuat'];
+          $TGChay = $_POST['TGChay'];
+          $TGDung = $_POST['TGDung'];
           $TGGianCach = $_POST['TGGianCach'];
           $GiaVe = $_POST['GiaVe'];
-          if (!$MaTuyen|| !$SoXe || !$TGDen || !$TGGianCach || !$TGXuat || !$GiaVe){
+          if (!$MaTuyen|| !$SoXe || !$TGChay || !$TGGianCach || !$TGDung || !$GiaVe){
             echo "Nhập thông tin đầy đủ";
           } else {
-          $sql = "INSERT INTO TuyenXe (MaTuyen, SoXe, TGDen, TGXuat, TGGianCach, GiaVe) VALUES ( '{$MaTuyen}', '{$SoXe}', '{$TGDen}', '{$TGXuat}', '{$TGGianCach}', '{$GiaVe}')";
+          $sql = "INSERT INTO TuyenXe (MaTuyen, SoXe, TGChay, TGDung, TGGianCach, GiaVe) VALUES ( '{$MaTuyen}', '{$SoXe}', '{$TGChay}', '{$TGDung}', '{$TGGianCach}', '{$GiaVe}')";
           if (mysqli_query($conn, $sql)) {
             echo "Tạo tuyến xe thành công";
           } else {

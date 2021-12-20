@@ -1,7 +1,7 @@
 
 <div id="ViewBus">
 <table id="example" class="table table-striped table-bordered" style="width:100%">
-              <thead>
+<thead>
                 <tr>
                     <th>Tuyến xe</th>
                     <th>Điểm dừng</th>
@@ -12,174 +12,11 @@
                     <th>Sửa</th>
                     <th>Xóa</th>
                 </tr>
-              </thead>
-              <tbody>
-                <tr>
-                    <td>01</td>
-                    <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                    <td>5:00 - 22:00</td>
-                    <td>15</td>
-                    <td>7000</td>
-                    <td>10</td>
-                    <td>Sửa</td>
-                    <td><input type="checkbox"></td>
-                    
-                </tr>
-                <tr>
-                  <td>02</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>03</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>04</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>05</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>06</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>07</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>08</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>09</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr><tr>
-                  <td>11</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>
-                <tr>
-                  <td>15</td>
-                  <td>Bến xe Giáp Bát,Đại học Bách Khoa,</td>
-                  <td>5:00 - 22:00</td>
-                  <td>15</td>
-                  <td>7000</td>
-                  <td>10</td>
-                  <td>Sửa</td>
-                  <td><input type="checkbox"></td>
-                  
-                </tr>    
-              </tbody>
-            </table>
+</thead>
+<?php
+require('../../controller/AdminViewBus.php');
+?>
+</table>
             <ul class="pagination justify-content-center">
                 <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
@@ -204,23 +41,23 @@
   </div>
   <br>
   <div class="form-group">
-      <label>Thời Gian Đến</label>
-      <input type="number" class="form-control" name="TGDen" placeholder="Tgian">
+      <label>Thời Gian Chạy</label>
+      <input type="time" class="form-control" name="TGChay" placeholder="Tgian">
   </div>
   <br>
   <div class="form-group">
-      <label>Thời Gian Xuất</label>
-      <input type="number" class="form-control"name="TGXuat" placeholder="Tgian">
+      <label>Thời Gian Dừng</label>
+      <input type="time" class="form-control"name="TGDung" placeholder="Tgian">
   </div>
   <br>
   <div class="form-group">
       <label>Thời Gian Giãn Cách</label>
-      <input type="number" class="form-control"name="TGGianCach" placeholder="Tgian">
+      <input type="number" class="form-control"name="TGGianCach" placeholder="phút">
   </div>
   <br>
   <div class="form-group">
       <label>Giá Vé</label>
-      <input type="number" class="form-control"name="GiaVe" placeholder="Tgian">
+      <input type="number" class="form-control"name="GiaVe" placeholder="đồng">
   </div>
   <br>
   <button class="w- btn btn-lg btn-primary" onclick= "changeBus2()" type="submit">Hủy</button> 
