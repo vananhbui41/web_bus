@@ -50,7 +50,7 @@
             <label for="floatingPassword">Password</label>
         </div>
         <div class="form-floating">
-            <input type="cfPassword" class="form-control" id="cfPassword" name ="MatKhau2" placeholder="Confirm Password">
+            <input type="password" class="form-control" id="cfPassword" name ="MatKhau2" placeholder="Confirm Password">
             <label for="cfPassword">Confirm Password</label>
         </div>
         

@@ -17,8 +17,8 @@
       			</form>
 				    </div>
             <div class="col-md-3" style="padding-top: 40px; padding-right: 40px">
-					    <button type="button" class="btn btn-outline-light btn-primary"><a href="login.php" class="link-secondary" >Đăng nhập</a></button>
-              <button type="button" class="btn btn-primary"><a href="signup.php" class="link-dark">Đăng ký</a></button>
+					    <button type="button" class="btn btn-outline-light btn-primary"><a href="login.php" class="link-light" >Đăng nhập</a></button>
+              <button type="button" class="btn btn-primary"><a href="signup.php" class="link-light">Đăng ký</a></button>
 					  </div>
           </div>
           <div class="row container-fluid bg-dark">

@@ -20,7 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Cơ sở dữ liệu: `bus`
 --
-
+create database bus;
+use bus;
 -- --------------------------------------------------------
 
 --
@@ -59,13 +60,6 @@ CREATE TABLE `khachhang` (
   `NgaySinh` date DEFAULT NULL,
   `MaThe` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Đang đổ dữ liệu cho bảng `khachhang`
---
-
-INSERT INTO `khachhang` (`MaKH`, `SĐT`, `Matkhau`, `HoTen`, `GioiTinh`, `DiaChi`, `NgaySinh`, `MaThe`) VALUES
-(1, '0912463044', '123123', 'Bùi Vân Anh', 0, 'Hoàng Mai, Hà Nội', '2011-12-01', NULL);
 
 -- --------------------------------------------------------
 

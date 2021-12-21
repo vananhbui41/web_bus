@@ -33,7 +33,7 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
                             <label for="fullName">Họ và tên</label>
-                            <input type="text" class="form-control" id="fullName" name="HoTen" placeholder="Enter full name">
+                            <input type="text" class="form-control" id="fullName" name="HoTen" placeholder="<?php echo $_SESSION['userInf']['HoTen']; ?>">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -49,13 +49,13 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
                             <label for="adddr">Địa chỉ</label>
-                            <input type="name" class="form-control" id="addr" name="DiaChi" placeholder="Enter Address">
+                            <input type="name" class="form-control" id="addr" name="DiaChi" placeholder="<?php echo $_SESSION['userInf']['DiaChi'];?>">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
                             <label for="birth">Ngày sinh</label>
-                            <input type="date" class="form-control" id="birth" name="NgaySinh" placeholder="yyyy/mm/dd">
+                            <input type="date" class="form-control" id="birth" name="NgaySinh" placeholder="<?php echo $_SESSION['userInf']['NgaySinh'];?>">
                         </div>
                     </div>
                 </div>

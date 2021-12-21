@@ -11,7 +11,7 @@ require "adminheader.php";
           <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Cập nhật giá vé</button>
         </div>
 
-        <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-content flex-fill" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <?php require "AdminEditBuses.php"; ?>
             
