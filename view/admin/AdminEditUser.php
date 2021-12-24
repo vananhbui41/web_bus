@@ -7,7 +7,6 @@
       <th>Số điện thoại</th>
       <th>Địa chỉ</th>
       <th>Thẻ buýt</th>
-      <th>Vé tháng</th>
       <th>Sửa</th>
       <th>Xóa</th>
     </tr>
