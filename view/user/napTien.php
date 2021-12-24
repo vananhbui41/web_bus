@@ -19,6 +19,7 @@
         </div>
         <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
         <div class="card h-100">
+        <form method = "post">
             <div class="card-body">
                 <div class="row gutters">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -27,13 +28,13 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
                             <label for="bankcardNum">Mã thẻ ngân hàng</label>
-                            <input type="text" class="form-control" id="bankcardNum" placeholder="Enter bank card number">
+                            <input type="text" class="form-control" name="SoThe" id="bankcardNum" placeholder="Enter bank card number">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <div class="form-group">
                             <label for="inputMoney">Số tiền (đ)</label>
-                            <input type="text" class="form-control" id="inputMoney" placeholder="Enter the amount">
+                            <input type="number" class="form-control" name= "SoTien" id="inputMoney" placeholder="Enter the amount">
                         </div>
                     </div>
                 </div>
@@ -42,11 +43,13 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="text-right">
                             <button type="button" class="btn btn-secondary"><a href="quanLyThe.php" class="link-light">Hủy</a></button>
-                            <button type="button" class="btn btn-primary">Nạp tiền</button>
+                            <button type="submit" class="btn btn-primary" name = "NapTien">Nạp tiền</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </form>
+        <?php require('../../controller/NapTien.php');?>
         </div>
         </div>
         </div>
