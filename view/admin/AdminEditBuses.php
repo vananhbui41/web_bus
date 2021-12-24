@@ -24,7 +24,7 @@ require('../../controller/AdminViewBus.php');
                 <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
             </ul>
             <button class="w- btn btn-lg btn-primary" type="button" onclick= "changeBus1()">Thêm tuyến</button>
-            <button class="w- btn btn-lg btn-primary" type="button">Xóa</button>
+            
 </div>
 
 
