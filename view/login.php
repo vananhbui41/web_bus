@@ -54,8 +54,9 @@ session_start();
             <input type="checkbox" value="remember-me"> Remember me
             </label>
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit" name = "LogIn">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" name = "LogIn">Sign in</button><br></br>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" name = "LogInAdmin">Sign in with Admin</button>
+        <p class="mt-5 mb-3 text-muted">© 2021–2022</p>
         </form>
         <?php
         include("../controller/login.php");

@@ -25,9 +25,10 @@
                 <h6 class="mb-2 text-primary">Thông tin thẻ xe buýt</h6>
             </div>
             <table class="table">
+                <?php require('../../controller/UserQLThe.php'); ?>
                 <tr>
                     <th scope="row">Mã thẻ: </th>
-                    <td colspan="2">12345678</td>
+                    <td colspan="2"><?php echo $_SESSION['theInf']['MaThe'];?></td>
                 </tr>
                 <tr>
                     <th scope="row">Ngày đăng kí: </th>
@@ -35,11 +36,11 @@
                 </tr>
                 <tr>
                     <th scope="row">Số dư:</th>
-                    <td colspan="2">100000</td>
+                    <td colspan="2"><?php echo $_SESSION['theInf']['SoDu'];?></td>
                 </tr>
                 <tr>
                     <th scope="row">Thẻ liên kết:</th>
-                    <td colspan="2">ABC Bank</td>
+                    <td colspan="2"><?php echo $_SESSION['theInf']['SoThe'];?></td>
                 </tr>
             </table>
 

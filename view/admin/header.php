@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +48,7 @@
             </form>
             <ul class="nav nav-pills navbar-right">
             <li>
-              <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-user"></i>Admin Account</a></li>
+              <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-user"></i><?php echo $_SESSION['adminInf']['HoTen'];?></a></li>
             <li>
               <a href="../index.php" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i>Đăng xuất</a>
             </li>

@@ -1,6 +1,6 @@
 
 <?php 
-require "adminheader.php";
+require "header.php";
 ?>
     <!-- main -->
 
