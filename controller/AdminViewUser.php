@@ -23,7 +23,6 @@ if (mysqli_num_rows($result) > 0) {
     echo "<td>".$row['NgaySinh']."</td>";
     echo "<td>".$row['SĐT']."</td>";
     echo "<td>".$row['DiaChi']."</td>";
-    echo "<td>".$row['MaThe']."</td>";
     echo "<td>null</td>";
     echo "<td>Sửa</td>";
     echo "<td><input type='checkbox'></td>";
