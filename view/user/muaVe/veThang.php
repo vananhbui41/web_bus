@@ -15,9 +15,31 @@
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <label for="Select" class="form-label">Chọn tuyến xe</label>
                     <select id="tuyenXe" class="form-select">
-                        <option>01</option>
-                        <option>02A</option>
-                        <option>16</option>
+                    <?php 
+            // require "../../../controller/Bus2.php"; 
+            //Khai báo sử dụng session
+             // require("../model/database.php");
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "bus";
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+            }
+            $sql= "SELECT * FROM TuyenXe";
+            $result = mysqli_query($conn, $sql);
+            if (mysqli_num_rows($result) > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+            $MaTuyen = $row['MaTuyen'];
+            echo "<option name='$MaTuyen'>".$row['MaTuyen']."</option>";
+            }
+            }
+            ?>
                     </select>
 
                     <label for="Select" class="form-label">Ngày nhận vé</label>

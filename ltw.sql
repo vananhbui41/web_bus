@@ -28,15 +28,38 @@ create table VeThuong (
 MaVe int(5) auto_increment not null primary key,
 MaTuyen varchar(5) NOT NULL,
 MaKH int(6) NOT NULL,
-ThoiGian timestamp,
+ThoiGian time,
 FOREIGN KEY (MaTuyen) REFERENCES TuyenXe(MaTuyen),
 foreign key (MaKH) references KhachHang(MaKH)
 );
+insert into VeThuong values
+('1','TX01','1','7:30'),
+('2','TX02','1','10:00');
 create table DiemDung (
-DiemDung varchar(30) not null primary key,
-MaTuyen varchar(5) not null,
-foreign key(MaTuyen) references TuyenXe(MaTuyen)
+MaDiemDung int(5) auto_increment not null primary key,
+DiemDung varchar(30) not null
 );
+insert into DiemDung values 
+('1','Đại học Bách Khoa Hà Nội'),
+('2','Học Viện Tài chính'),
+('3','Bệnh viện 108'),
+('4',' Đại học kinh tế quốc dân'),
+('5',' Bến xe nước ngầm'),
+('6','Bến xe Giáp bát');
+
+create table TuyenBuyt(
+MaTuyen varchar(5),
+MaDiemDung int(5),
+foreign key (MaDiemDung) references DiemDung(MaDiemDung),
+foreign key (MaTuyen) references TuyenXe(MaTuyen)
+);
+insert into TuyenBuyt values
+('TX01','1'),
+('TX01','2'),
+('TX02','1'),
+('TX02','3'),
+('TX03','4'),
+('TX04','1');
 create table TheNganHang (
 SoThe varchar(15) not null primary key,
 NganHang varchar(50) not null,

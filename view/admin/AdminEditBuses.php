@@ -1,5 +1,5 @@
 
-<div id="ViewBus">
+<div id="ViewBus" style="display: block;">
 <table id="example" class="table table-striped table-bordered" style="width:100%">
 <thead>
                 <tr>
@@ -26,8 +26,10 @@ require('../../controller/AdminViewBus.php');
             <button class="w- btn btn-lg btn-primary" type="button" onclick= "changeBus1()">Thêm tuyến</button>
             
 </div>
-
-
+</div>
+<div id="EditBus" style="display: none;">
+<h2> Hello</h2>
+</div>
 <div id="ThemBus" style="display: none;">
 <form method="post">
   <div class="form-group">
@@ -66,4 +68,3 @@ require('../../controller/AdminViewBus.php');
 <?php
 require('../../controller/Bus.php');
 ?>
-</div>
