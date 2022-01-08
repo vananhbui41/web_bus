@@ -8,12 +8,12 @@
          </a>
  
          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-             <li><a href="home.php" class="nav-link px-2 text-white">Trang chủ</a></li>
-             <li><a href="#" class="nav-link px-2 text-white">Tuyến xe</a></li>
-             <li><a href="muaVe.php" class="nav-link px-2 text-white">Mua vé</a></li>
-             <li><a href="#" class="nav-link px-2 text-white">Hỗ trợ</a></li>
-             <li><a href="#" class="nav-link px-2 text-white">Góp ý</a></li>
-             <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+             <li><a href="home.php" class="nav-link px-2 text-white"><i class="fas fa-home" color="white"></i> Trang chủ</a></li>
+             <li><a href="#" class="nav-link px-2 text-white"><i class="fas fa-bus" color="white"></i> Tuyến xe</a></li>
+             <li><a href="muaVe.php" class="nav-link px-2 text-white"><i class="fas fa-money-bill-wave" color="white"></i>Mua vé</a></li>
+             <li><a href="#" class="nav-link px-2 text-white"><i class="fas fa-phone" color="white"></i> Hỗ trợ</a></li>
+             <li><a href="#" class="nav-link px-2 text-white"><i class="fas fa-comments-dollar" color="white"></i> Góp ý</a></li>
+             <li><a href="#" class="nav-link px-2 text-white"><i class="fas fa-info" color="white"></i> About</a></li>
          </ul>
  
          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">

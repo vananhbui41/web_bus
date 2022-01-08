@@ -17,17 +17,17 @@
       			</form>
 				    </div>
             <div class="col-md-3" style="padding-top: 40px; padding-right: 40px">
-					    <button type="button" class="btn btn-outline-light btn-primary"><a href="login.php" class="link-light" >Đăng nhập</a></button>
-              <button type="button" class="btn btn-primary"><a href="signup.php" class="link-light">Đăng ký</a></button>
+					    <button type="button" class="btn btn-outline-light btn-primary"><a href="login.php" class="link-light" ><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></button>
+              <button type="button" class="btn btn-primary"><a href="signup.php" class="link-light"><i class="fas fa-user-circle"></i> Đăng ký</a></button>
 					  </div>
           </div>
           <div class="row container-fluid bg-dark">
             <ul class=" nav nav-pills nav-justified">
-              <li><a href="#" class="nav-link px-2 text-secondary">Trang chủ</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Tuyến xe</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Hỗ trợ</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Góp ý</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+              <li><a href="#" class="nav-link px-2 text-secondary"><i class="fas fa-home" color="white"></i> Trang chủ</a></li>
+              <li><a href="#" class="nav-link px-2 text-white"><i class="fas fa-bus" color="white"></i> Tuyến xe</a></li>
+              <li><a href="#" class="nav-link px-2 text-white"><i class="fas fa-phone" color="white"></i> Hỗ trợ</a></li>
+              <li><a href="#" class="nav-link px-2 text-white"><i class="fas fa-comments-dollar" color="white"></i> Góp ý</a></li>
+              <li><a href="#" class="nav-link px-2 text-white"><i class="fas fa-info" color="white"></i> About</a></li>
             </ul>
           </div>
           
