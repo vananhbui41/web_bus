@@ -10,9 +10,9 @@
 					  <br>
 					  <form class="input-group pd" method="post">
 						  <input type="hidden" name="c" value="">
-          		<input type="text" class="form-control" placeholder="Bạn muốn tìm gì?" name="txtSearch">
+          		<input type="text" name ="searchname" class="form-control" placeholder="Bạn muốn tìm gì?" name="txtSearch">
           				<span class="input-group-btn">
-        					  <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+        					  <button type="submit" name="search" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
         				  </span>
       			</form>
 				    </div>
