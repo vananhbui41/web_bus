@@ -105,7 +105,7 @@
                 if ($SoDu > 0) {
                 $sql = "UPDATE TheXeBuyt SET SoDu = '{$SoDu}'";
                 mysqli_query($conn, $sql);
-                $sql = "INSERT INTO VeThang(MaTuyen, MaKH, ThoiGian, Thang) VALUES ('{$MaTuyen}','{$MaKH}','{$ThoiGian}', '{$Thang}')";
+                $sql = "INSERT INTO VeThang(MaTuyen, MaKH, ThoiGian, Thang, TrangThai) VALUES ('{$MaTuyen}','{$MaKH}','{$ThoiGian}', '{$Thang}', 1)";
                     if (mysqli_query($conn, $sql)) {
                         echo "Mua vé thành công";
                     } else {

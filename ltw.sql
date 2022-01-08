@@ -29,6 +29,7 @@ MaVe int(5) auto_increment not null primary key,
 MaTuyen varchar(5) NOT NULL,
 MaKH int(6) NOT NULL,
 ThoiGian time,
+TrangThai int(1) not null,
 FOREIGN KEY (MaTuyen) REFERENCES TuyenXe(MaTuyen),
 foreign key (MaKH) references KhachHang(MaKH)
 );
@@ -38,11 +39,12 @@ MaTuyen varchar(5),
 MaKH int(6) NOT NULL,
 ThoiGian time,
 Thang int(2) not null,
+TrangThai int(1) not null,
 foreign key (MaKH) references KhachHang(MaKH)
 );
 insert into VeThuong values
-('1','TX01','1','7:30'),
-('2','TX02','1','10:00');
+('1','TX01','1','7:30','1'),
+('2','TX02','1','10:00','1');
 create table DiemDung (
 MaDiemDung int(5) auto_increment not null primary key,
 DiemDung varchar(30) not null

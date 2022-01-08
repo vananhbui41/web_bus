@@ -9,6 +9,8 @@ require "header.php";
           <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Quản lý tuyến buýt</button>
           <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Quản lý người dùng</button>
           <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Cập nhật giá vé</button>
+          <button class="nav-link" id="v-pills-ve-thuong-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ve-thuong" type="button" role="tab" aria-controls="v-pills-ve-thuong" aria-selected="false">Duyệt vé thường</button>
+          <button class="nav-link" id="v-pills-ve-thang-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ve-thang" type="button" role="tab" aria-controls="v-pills-ve-thang" aria-selected="false">Duyệt vé tháng</button>
         </div>
 
         <div class="tab-content flex-fill" id="v-pills-tabContent">
@@ -25,6 +27,15 @@ require "header.php";
           <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
             <?php require "AdminEditTicket.php";?>
           </div>
+
+          <div class="tab-pane fade" id="v-pills-ve-thuong" role="tabpanel" aria-labelledby="v-pills-ve-thuong-tab">
+            <?php require "AdminScanTicketThuong.php";?>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-ve-thang" role="tabpanel" aria-labelledby="v-pills-ve-thang-tab">
+            <?php require "AdminScanTicketThang.php";?>
+          </div>
+
         </div>
       </div>
     </div>
