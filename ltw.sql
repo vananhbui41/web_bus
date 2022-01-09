@@ -33,6 +33,14 @@ TrangThai int(1) not null,
 FOREIGN KEY (MaTuyen) REFERENCES TuyenXe(MaTuyen),
 foreign key (MaKH) references KhachHang(MaKH)
 );
+create table LoaiVeThang (
+MaLoaiVe int not null auto_increment primary key,
+TenLoai text,
+GiaVe float
+);
+insert into LoaiVeThang values 
+(1, 'Một Tuyến', '50000'),
+(2, 'Liên Tuyến', '100000');
 create table VeThang (
 MaVe int(5) auto_increment not null primary key,
 MaTuyen varchar(5),
@@ -40,6 +48,8 @@ MaKH int(6) NOT NULL,
 ThoiGian time,
 Thang int(2) not null,
 TrangThai int(1) not null,
+MaLoaiVe int,
+foreign key (MaLoaiVe) references LoaiVeThang(MaLoaiVe),
 foreign key (MaKH) references KhachHang(MaKH)
 );
 insert into VeThuong values

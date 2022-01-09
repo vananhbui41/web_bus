@@ -69,22 +69,30 @@
         <h1>Giá vé: 
             <?php
             if(isset($_POST['MuaMotTuyen'])) {
-                $GiaVe = 50000;
+                $sql = "SELECT GiaVe FROM LoaiVeThang Where MaLoaiVe = 1";
+                $result = mysqli_query($conn,$sql);
+                $row = mysqli_fetch_assoc($result);
+                $GiaVe = $row['GiaVe'];
                 $_SESSION['GiaVe']=$GiaVe;
                 $Thang = $_POST['Thang'];
                 $_SESSION['Thang'] = $Thang;
                 $MaTuyen = $_POST['tuyenxe'];
                 $_SESSION['MaTuyen'] = $MaTuyen;
-                echo $GiaVe.' đồng';            
+                echo $GiaVe.' đồng';
+                $_SESSION['MaLoaiVe'] = 1;            
             }
             if(isset($_POST['MuaLienTuyen'])) {
-                $GiaVe = 100000;
+                $sql = "SELECT GiaVe FROM LoaiVeThang Where MaLoaiVe = 2";
+                $result = mysqli_query($conn,$sql);
+                $row = mysqli_fetch_assoc($result);
+                $GiaVe = $row['GiaVe'];
                 $_SESSION['GiaVe']=$GiaVe;
                 $Thang = $_POST['Thang'];
                 $_SESSION['Thang'] = $Thang;
                 $MaTuyen = null;
                 $_SESSION['MaTuyen'] = $MaTuyen;
-                echo $GiaVe.' đồng';             
+                echo $GiaVe.' đồng';
+                $_SESSION['MaLoaiVe'] = 2;             
             }
             ?>
         </h1>
@@ -97,6 +105,7 @@
             $ThoiGian = date("h:i:s");
             $Thang = $_SESSION['Thang'];
             $MaTuyen = $_SESSION['MaTuyen'];
+            $MaLoaiVe = $_SESSION['MaLoaiVe'];
             $sql = "SELECT SoDu FROM TheXeBuyt WHERE MaKH = '{$MaKH}'";
             $result = mysqli_query($conn,$sql);
             if ($result != null){
@@ -105,7 +114,7 @@
                 if ($SoDu > 0) {
                 $sql = "UPDATE TheXeBuyt SET SoDu = '{$SoDu}'";
                 mysqli_query($conn, $sql);
-                $sql = "INSERT INTO VeThang(MaTuyen, MaKH, ThoiGian, Thang, TrangThai) VALUES ('{$MaTuyen}','{$MaKH}','{$ThoiGian}', '{$Thang}', 1)";
+                $sql = "INSERT INTO VeThang(MaTuyen, MaKH, ThoiGian, Thang, TrangThai, MaLoaiVe) VALUES ('{$MaTuyen}','{$MaKH}','{$ThoiGian}', '{$Thang}', 1, '{$MaLoaiVe}')";
                     if (mysqli_query($conn, $sql)) {
                         echo "Mua vé thành công";
                     } else {
