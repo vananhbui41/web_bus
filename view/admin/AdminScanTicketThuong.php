@@ -13,4 +13,35 @@
     require('../../controller/AdminScanTicketThuong.php');
   ?>            
 </table>
-<button class="w- btn btn-lg btn-primary" type="button">Xóa</button>
+<br>
+</br>
+<h2>Nhập Mã Vé </h2>
+<form method = "post">
+<input type="number" name="MaVe">
+<br></br>
+<button class="w- btn btn-lg btn-primary" type="submit" name="Duyet">Duyệt</button>
+<br>
+</form>
+<?php
+if(isset($_POST["Duyet"])){
+  $conn = new mysqli("localhost", "root", "", "bus");
+  $MaVe = $_POST['MaVe'];
+  $sql = "SELECT TrangThai FROM VeThuong WHERE MaVe = '{$MaVe}'";
+  $result = mysqli_query($conn,$sql);
+  if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    $row = mysqli_fetch_assoc($result);
+    $TrangThai = $row['TrangThai'];
+    if($TrangThai==1){
+      $sql = "UPDATE VeThuong SET TrangThai = 0 WHERE MaVe = '{$MaVe}' ";
+      if (mysqli_query($conn, $sql)) {
+        echo "Update thành công";
+      } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+      } 
+    } else {
+      echo "Vé đã sử dụng";
+    }
+    }
+  }
+?>
