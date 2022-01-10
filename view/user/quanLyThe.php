@@ -49,6 +49,7 @@
                     <div class="text-right">
                         <button type="button" id="submit" name="submit" class="btn btn-secondary"><a href="home.php" class="link-light">Thoát</a></button>
                         <button type="button" id="submit" name="submit" class="btn btn-primary"><a href="napTien.php" class="link-light">Nạp tiền</a></button>
+                        <button type="button" id="submit" name="submit" class="btn btn-primary"><a href="TicketHistory.php" class="link-light">Lịch sử mua vé</a></button>
                     </div>
                 </div>
             </div>
